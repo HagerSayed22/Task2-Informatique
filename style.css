@@ -1,350 +1,399 @@
 :root{
-    --mainTransition:0.5s;
+   --mainTransition:0.5s;
 }
 *{
-    font-family:Arial, Helvetica, sans-serif;
+   font-family:Arial, Helvetica, sans-serif;
 }
-.contentDiv1{
-    background-color: rgba(209, 218, 235, 0.312);
-    position: relative;
-    z-index: 1000;
- }
- .contentDiv1::after{
-    content: "";
-    width: 50%;
-    height: 500px;
-    background-color:rgb(221, 229, 244) ;
-    border-radius: 10% 0% 3000% 9000%;
-    position: absolute;
-    top: 0;
-    left: 50%;
- }
-
-.btnNav button, .divInput button{
-    margin-left: -50%;
-   border: none;
-   width: 150%;
-   background-color: rgb(179, 15, 100);
-   border-radius: 50px;
+.div-parent-api{
+   background-color: rgba(209, 218, 235, 0.312);
+   position: relative;
+   z-index: 1000;
+}
+.div-parent-api::after{
+   content: "";
+   width: 50%;
+   height: 500px;
+   background-color:rgb(221, 229, 244);
+   border-radius: 10% 0% 3000% 9000%;
+   position: absolute;
+   top: 0;
+   left: 50%;
+}
+.row-api{
+  position: relative;z-index: 1000;
+}
+.row-about,.row-code,.row-ui{
+  width: 100%
+}
+.paragraph-ui{
+  margin-top: 10%;
+}
+.btn{
+  border-radius: 50px;
+}
+.paragraph-ui h2{
+  color: rgba(21, 23, 40, 0.833); font-weight: 700;
+}
+.paragraph-code{
+  margin-top: 5%;
+}
+.paragraph-code h2{
+  color: rgba(21, 23, 40, 0.833); 
+  font-weight: 700;
+}
+.btn-nav button{
+  margin-left: 150%;
+}
+.btn-nav button, .input-group button{
+  border: none;
+  width: 100%;
+  background-color: rgb(179, 15, 100);
+  border-radius: 50px;
+  color: white;
+  transition: var(--mainTransition);
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn-nav button:hover , .input-group button:hover{
+   background-color: rgb(210, 21, 119);
    color: white;
-   transition: var(--mainTransition);
-   font-size: 18px;
-   font-weight: 600;
-}
-.btnNav button:hover , .divInput button:hover{
-    background-color: rgb(210, 21, 119);
-    color: white;
-}
-
+} 
 .linkContact{
-    color: black;
-    font-weight: 700;
-    text-decoration: underline;
-    transition: var(--mainTransition);
+   color: black;
+   font-weight: 700;
+   text-decoration: underline;
+   transition: var(--mainTransition);
 }
 .linkContact:hover{
-    color: rgb(169, 14, 94);
+   color: rgb(169, 14, 94);
 }
-
-.img1{
-    margin-top: -5%;
+.navbar-nav{
+  padding-top: 2%;
+  margin-left: 5%;
+  font-size: 20px;
 }
-.divLeft{
-    margin-top: 5%;
+.img-mobile{
+   margin-top: -5%;
 }
-.head1{
-    font-size:45px ;
-    font-weight: bold;
-    color: rgb(35, 25, 84);
-    width: 70%;
-   
-}/* .divInput{
-    margin-right: 0% !important;
-    margin-left: 0% !important;
-} */
-.divInput input{
-    padding: 7%;
-    box-shadow: 2px 5px 10px gainsboro;
+.api-title{
+   font-size:45px ;
+   font-weight: bold;
+   color: rgb(35, 25, 84);
+   width: 70%;
+   margin-top: 10%;
+  
+} .input-group{
+   margin-right: 0% !important;
+   margin-left: 0% !important;
+} 
+.input-group input{
+   padding: 2%;
+   width: 85%;
+   border-radius: 50px;
+   box-shadow: 2px 5px 10px gainsboro;
 }
-.divInput button{
-    color: white;
-    padding: 3.5%;
-    width: 110%;
-    font-size:18px;
+.input-group button{
+  margin-left: -50%;
+   color: white;
+   width: 110%;
+   font-size:18px;
+   padding: 5%;
+}  
+.text-contact{
+  padding-left: 2%; color: gray;
+}
+@media screen and (max-width:828px) {
+  .btn-nav button{
+     margin-left: 10% !important;
+  }
+  .input-group button{
+     width: 100% !important;
+  }
 }
 @media screen and (max-width:890px) {
-    .btnNav button{
-        margin-left: -25%;
-    }
-    footer i{
-        padding: 10% !important;
-    }
-}
+  
+   footer i{
+       padding: 10% !important;
+   }
+  }
 @media screen and (max-width:769px) {
-    .btnNav button{
-        margin-left: 0px;
-       border: none;
-       width: 100%;
-       margin: auto;
-       background-color: rgb(179, 15, 100);
-       border-radius: 50px;
-       color: white;
-       font-size: 15px;
-    }
-    .linkPricing{
-        margin-left: 0%;
-    }
-    .divInput input, .divInput button{
-        width: 110% !important;
-       }
-       .divInput input{
-        margin-bottom: 5% !important;
-    }
-    .divInput{
-        margin-left: 20% ;
-       } 
-       .head1{
-        margin-left: 20% !important;
-       }
-       footer{
-        text-align: center;
-       }
-       footer a{
-        padding-left: 80%;
-       }
-    
+   .btn-nav button{
+      border: none;
+      width: 95%;
+      margin: auto;
+      background-color: rgb(179, 15, 100);
+      border-radius: 50px;
+      color: white;
+      font-size: 15px;
+   }
+    .input-group input{
+       width: 90% !important;
+      } 
+      .input-group button{
+        width: 90% !important;
+        margin-top: 0% !important;
+        margin-left: -10% !important;
+        padding: 3% !important;
+      }
+      .input-group input{
+       margin-bottom: 5% !important;
+       padding: 3% !important;
+   }
+  .input-group{
+     margin-left: 2% !important;
+     text-align: center;
+  }
+      .api-title{
+       margin-left: 20% !important;
+      }
+      footer{
+       text-align: center;
+      }
+      footer a{
+       padding-left: 80%;
+      }
+      .row-api,.row-about,.divUX{
+        display: flex;
+        flex-direction: column-reverse;
+      }  
 }
 @media screen and (max-width:958px) {
-    .contentDiv1::after{
-        content: "";
-        width: 100%;
-        height: 300px;
-        border-radius: 10% 0% 1000% 1000%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -10;
-     }
-     /* .divInput{
-        margin-left: 15% !important;
-     } */
-     .textContact{
-       margin-left: 25%;
-     }
-     .divCards i{
-        margin-top: 5%;
-     }
+   .div-parent-api::after{
+       content: "";
+       width: 100%;
+       height: 300px;
+       border-radius: 10% 0% 1000% 1000%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: -10;
+    }
+    .text-contact{
+      margin-left: 25%;
+    }
+    .all-cards i{
+       margin-top: 5%;
+    }
+}
+@media screen and (max-width:669px) {
+  .input-group button{
+    margin-left: -50% !important;
+    padding: 5% !important;
+  }
 }
 @media screen and (max-width:992px) {
-     .rowDiv1,.rowDiv2,.divUX{
-       display: flex;
-       flex-direction: column-reverse;
-     }  
-    .divLeft .head1{
-     font-size: 25px;
-     text-align: center;
-    }
-      .img1{
-        width: 60%;
-        margin-left: 25%;
-        margin-top: 5%;
-     } 
-     .partSearch{
-         padding-left: 10%;
-        width: 100%;
-        height: 20px;
-     }
     
-      .textContact{
-        margin-left: 25%;
-     } 
-     .divInput{
-        margin-left: 15%;
-    }  
-    .head1{
-        margin-left: 10%;
-    }
-   #divInput2{
-      text-align: center;
-      justify-content: center;
-   }
-    
-   
-}
-
-@media screen and (max-width:520px) {
-    .divInput{
-        margin-left:5%;
-       }
-       .div2Content button{
-        margin-left: 10%;
-        width: 50% !important;
-       }
-       .div2Content h2{
-         margin-top: 20%;
-       }
-       .div2Content h2, .div2Content p{
-          margin-left: 2%;
-       }
-       .div2Content{
-        text-align: center;
-       }
-       .div2Content i{
-        padding-left: 0% !important;
-       }
-       .divUX,.divCode{
-        text-align: center;
-       }
-       .divCode .boxCode{
-         padding-left: 10%;
-       }
-       .contentDiv3::after{
-        content: "";
-        display: none;
-       }
-       .img2{
-        margin-top: -20%;
-       }
-       .divInputAll h2 {
-        text-align: center;
-       }
-      
-}
-
-.div2Content{
-    background-color:rgb(21, 23, 40);
-    color: white;
-    z-index: 400;
-    position: relative;
-    padding-top:6% ;
-}
-.div2Content h2{
-    font-size: 300%;
-}
-.div2Content button{
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    width: 30%;
-    font-size: 150%;
-    border-radius: 50px;
-    transition: var(--mainTransition);
-}
-.div2Content button:hover{
-   border: none;
-   background-color: rgb(179, 15, 100);
-}
-.div2Content::after{
-    content: "";
-    width: 40%;
-    height: 200px;
-    background-color:rgba(64, 66, 83, 0.571) ;
-    border-radius: 10% 0% 70000% 9000%;
-    position: absolute;
-    top: 0;
-    left: 0%;
-    z-index: -1;
- }
- .div2Content i{
-    font-size: 200%;
-    transition: var(--mainTransition);
-    padding-left: 50%;
- }
- .div2Content i:hover{
-    scale: 1.3;
-    cursor: pointer;
- }
- .icons{
-    margin-top: 5%;
- }
- .icons i{
-    margin-top: 25%;
- }
- .contentDiv3{
-    background-color: rgba(209, 218, 235, 0.312);
-    position: relative;
-    z-index: 1000;
- }
- .contentDiv3::after{
-    content: "";
-    width: 30%;
-    height: 500px;
-    background-color:rgb(221, 229, 244) ;
-    border-radius: 10000% 0% 0% 9000%;
-    position: absolute;
-    top: 40%;
-    left: 70%;
-    z-index: -1;
- }
- .code{
-    margin-top: 10%;
-    color: white;
-    background-color: rgb(21, 23, 40);
-    position: relative;
-    border-radius: 0px 0px 20px 20px ;
-    min-height: 200px;
-    padding: 5%;
-    font-size: 15px;
-    font-weight: 700;
-    width: 95%;
-    box-shadow: 5px 10px 10px rgb(190, 189, 189);
- }
- .code::before{
-    content: "";
-    width: 100%;
-    height: 30px;
-    background-color: rgba(64, 66, 83, 0.571);
-    position: absolute;
-    top: -30px;
-    left: 0;
-    border-radius: 20px 20px 0px 0px;
-
- }
- .dots{
-    position: absolute;
-    top: -23px;
-    left: 5%;
- }
- .divCards{
+   .api-content-left .api-title{
+    font-size: 25px;
     text-align: center;
-    color: rgb(21, 23, 40);
+   }
+     .img-mobile{
+       width: 60%;
+       margin-top: 5%;
+    } 
+     .text-contact{
+       margin-left: 25%;
+    } 
+    .input-group{
+       margin-left: 15%;
+   }  
+   .input-group button{
+     width: 100%;
+ } 
+   .api-title{
+       margin-left: 10%;
+   }
+   .input-group button{
+     width: 150% !important;
+   }
+}
+@media screen and (max-width:576px) {
+  .btn-nav button{
+     margin-left: 0% !important;
+  }
+  .input-group button{
+     width: 88% !important;
+     margin-left: -10% !important;
+     padding: 3% !important;
+  }
+}
+@media screen and (max-width:520px) {
+   
+      .div-parent-about button{
+       margin-left: 10%;
+       width: 50% !important;
+      }
+      .div-parent-about h2{
+        margin-top: 20%;
+      }
+      .div-parent-about h2, .div-parent-about p{
+         margin-left: 2%;
+      }
+      .div-parent-about{
+       text-align: center;
+      }
+      .div-parent-about i{
+       padding-left: 0% !important;
+      }
+      .divUX,.row-code{
+       text-align: center;
+      }
+      .row-code .code-box{
+        padding-left: 10%;
+      }
+      .div-parent-code::after{
+       content: "";
+       display: none;
+      }
+      .img2{
+       margin-top: -20%;
+      }
+      .input-groupAll h2 {
+       text-align: center;
+      }
+ .paragraph-code{
+   margin-top: 10% !important;
  }
- .divCards i{
-    color: white;
-    background-color: rgb(21, 23, 40);
-    border-radius: 50px;
-    padding: 6%;
-    font-size: 150%;
- }
- #divInput2{
-    
-    margin-top: 5%;
- }
- footer{
-    background-color: rgb(21, 23, 40);
-    color: white;
- }
- footer i{
-    color: rgb(21, 23, 40);
-    background-color: white;
-    border-radius: 50px;
-    padding: 30%;
-    font-size: 15px;
- }
- footer .links{
-    margin-top: 5%;
- }
- footer a{
-    margin-top: 15%;
- }
- footer p{
-    font-size: 15px;
-    font-weight: 600;
- }
-
-
-
- 
-    
+ .row-ui{
+  margin-left: 1% !important;
+ } 
+}
+.div-parent-about{
+   background-color:rgb(21, 23, 40);
+   color: white;
+   z-index: 400;
+   position: relative;
+   padding-top:6% ;
+}
+.div-parent-about h2{
+   font-size: 300%;
+}
+.div-parent-about button{
+   background-color: transparent;
+   color: white;
+   border: 1px solid white;
+   width: 30%;
+   font-size: 150%;
+   border-radius: 50px;
+   transition: var(--mainTransition);
+}
+.div-parent-about button:hover{
+  border: none;
+  background-color: rgb(179, 15, 100);
+}
+.div-parent-about::after{
+   content: "";
+   width: 40%;
+   height: 200px;
+   background-color:rgba(64, 66, 83, 0.571) ;
+   border-radius: 10% 0% 70000% 9000%;
+   position: absolute;
+   top: 0;
+   left: 0%;
+   z-index: -1;
+}
+.div-parent-about i{
+   font-size: 200%;
+   transition: var(--mainTransition);
+   padding-left: 50%;
+}
+.div-parent-about i:hover{
+   scale: 1.3;
+   cursor: pointer;
+}
+.icons{
+   margin-top: 5%;
+}
+.icons i{
+   margin-top: 25%;
+}
+.div-parent-code{
+   background-color: rgba(209, 218, 235, 0.312);
+   position: relative;
+   z-index: 1000;
+}
+.div-parent-code::after{
+   content: "";
+   width: 30%;
+   height: 500px;
+   background-color:rgb(221, 229, 244) ;
+   border-radius: 10000% 0% 0% 9000%;
+   position: absolute;
+   top: 40%;
+   left: 70%;
+   z-index: -1;
+}
+.code-box{
+   margin-top: 10%;
+   color: white;
+   background-color: rgb(21, 23, 40);
+   position: relative;
+   border-radius: 0px 0px 20px 20px ;
+   min-height: 200px;
+   padding: 5%;
+   font-size: 15px;
+   font-weight: 700;
+   width: 95%;
+   box-shadow: 5px 10px 10px rgb(190, 189, 189);
+}
+.code-box::before{
+   content: "";
+   width: 100%;
+   height: 30px;
+   background-color: rgba(64, 66, 83, 0.571);
+   position: absolute;
+   top: -30px;
+   left: 0;
+   border-radius: 20px 20px 0px 0px;
+}
+.dots-code{
+   position: absolute;
+   top: -23px;
+   left: 5%;
+}
+.all-cards{
+   text-align: center;
+   color: rgb(21, 23, 40);
+}
+.all-cards i{
+   color: white;
+   background-color: rgb(21, 23, 40);
+   border-radius: 50px;
+   padding: 6%;
+   font-size: 150%;
+}
+footer{
+   background-color: rgb(21, 23, 40);
+   color: white;
+}
+footer i{
+   color: rgb(21, 23, 40);
+   background-color: white;
+   border-radius: 50px;
+   padding: 30%;
+   font-size: 15px;
+}
+footer .links-footer{
+   margin-top: 5%;
+}
+footer a{
+   margin-top: 15%;
+}
+footer p{
+   font-size: 15px;
+   font-weight: 600;
+}
+.icon-purple{
+  color:#c115a1;
+}
+.icon-gray{
+  color: #bcc2c2;
+}
+.icon-blue{
+  color: #2eabad;;
+}
+input[type='search']{
+  border-radius: 50px;width: 120%;
+}
 
 

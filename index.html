@@ -5,70 +5,62 @@
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      
     </head>
     <body>
-        <div class="contentDiv1" >
-            <nav class="navbar navbar-default" style="background-color: transparent;border: none; z-index: 100;">
-                <div class="container-fluid" style="margin: 3% 5% 3% 5%;">
+        <nav class="navbar navbar-expand-sm bg-light ">
+            <div class="container-fluid">
                 
-                <!-- BRAND -->
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#alignment-example" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                               <!-- PayPal Logo --><table style="margin: 0px;padding: 0%;" border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/eg/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/eg/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" border="0" alt="PayPal Logo"></a></td></tr></table>
+              <a class="navbar-brand" href="#">
+                <table  border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/eg/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/eg/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" border="0" alt="PayPal Logo"></a></td></tr></table>
+              </a>
 
-                </a>
-                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
                 
-                <!-- COLLAPSIBLE NAVBAR -->
-                <div class="collapse navbar-collapse" id="alignment-example">
-                
-                <!-- Links -->
-                <ul class="nav navbar-nav " style="margin-top: 0.3%; font-size: 17px; width: 50%; font-weight: 700;">
-                <li style="padding-left: 8%;" class="linkPricing"><a href="#">Pricing <span class="sr-only">(current)</span></a></li>
-                <li><a href="#"> About</a></li>
-                <li><a href="#"> Contact</a></li>
+                  <li class="nav-item btn-nav"> 
+                        <button type="submit" class="btn btn-default">Schedule a Demo</button>
+                        </a>
+                    </li>  
                 </ul>
-                
-                <!-- Search -->
-                <form class="navbar-form navbar-right btnNav" role="search">
-                <button type="submit" class="btn btn-default">Schedule a Demo</button>
-                </form>
-                
-                </div>
-                
-                </div>
-                </nav>
+              </div>
+            </div>
+          </nav>
+        <div class="div-parent-api">
+                <br><br><br><br>
                 <div class="container">
-                <div class="row rowDiv1" style=" position: relative;width: 100%;z-index: 1000;">
-                    <div class="col col-md-7  divLeft" >
-                        <p class="head1">Start building with our APIs for absolutely Free</p>
+                <div class="row row-api">
+                    <div class="col col-md-7 api-content-left" >
+                        <p class="api-title">Start building with our APIs for absolutely Free</p>
                         <br>
-                        <div class=" input-group divInput">
-                            <div class="col col-md-9 col-sm-9 col-xs-12">
-                            <input type="search" placeholder="Enter Email Address" class="form-control" style="border-radius: 50px;width: 120%;">
-                            </div>
-                            <div class="col col-md-3 col-sm-3 col-xs-12">
-                            <span class="input-group-btn btnDiv1" >
-                            <button class="btn" type="button" style="border-radius: 50px;"> Schedule a Demo</button>
-                            </span>
-                            </div>
-                            </div>
+                            <div class="input-group mb-3">
+                                <div class="col col-md-9 col-sm-9 col-12">
+                                <input type="search" class="form-control" placeholder="Search" name="search">
+                                </div>
+                                <div class="col col-md-3 col-sm-3 col-12">
+                                <button class="btn" type="button">example.com</button>
+                                </div>
+                              </div>
                             <br>
-                            <p class="textContact" style="padding-left: 2%; color: gray;">Have any question? <a href="#" class="linkContact">Contact Us</a></p>
+                            <p class="text-contact" >Have any question? <a href="#" class="linkContact">Contact Us</a></p>
                     </div>
-                    <div class="col col-md-5  img1">
-                        <img src="mobile1.png" alt="" width="80%">
+                    <div class="col col-md-5 img-mobile">
+                        <img src="images/mobile1.png"  width="80%">
                     </div>
                     
                  </div>
@@ -76,33 +68,34 @@
 <br><br><br>
          </div>
 
-          <div class="div2Content" >
+          <div class="div-parent-about" >
             <div class="container">
-            <div class="row rowDiv2" style="width: 100%;">
-                <div class="col col-md-6">
+            <div class="row row-about">
+                <div class="col-12 col-md-6 ">
                     <h2>Who we work with</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eum vero sapiente tempora quo totam quae, quidem vitae consectetur ducimus necessitatibus iure quia ratione? Totam illum quisquam iure saepe minus.</p>
                     <br>
                     <button>About Us</button>
                 </div>
-                <div class="col col-md-6">
+                <div class="col-12 col-md-6">
                     <div class="row icons" >
-                        <div class="col col-md-4 col-sm-4 col-xs-6 column1" >
+                        <div class=" col-md-4 col-sm-4 col-6 " >
                             <i class="fa-solid fa-image"></i>
+                            
                         </div>
-                        <div class="col col-md-4 col-sm-4 col-xs-6 column1">
+                        <div class=" col-md-4 col-sm-4 col-6 ">
                             <i class="fa-solid fa-paper-plane"></i>
                         </div>
-                        <div class="col col-md-4 col-sm-4 col-xs-6 column1 column3">
+                        <div class=" col-md-4 col-sm-4 col-6  ">
                             <i class="fa-solid fa-palette"></i>
                         </div>
-                        <div class="col col-md-4 col-sm-4 col-xs-6 column1" >
+                        <div class=" col-md-4 col-sm-4 col-6 " >
                             <i class="fa-solid fa-shop"></i>
                         </div>
-                        <div class="col col-md-4 col-sm-4 col-xs-6 column1">
+                        <div class=" col-md-4 col-sm-4 col-6 ">
                             <i class="fa-solid fa-paper-plane"></i>
                         </div>
-                        <div class="col col-md-4 col-sm-4 col-xs-6 column1 column3">
+                        <div class=" col-md-4 col-sm-4 col-6 ">
                             <i class="fa-solid fa-palette"></i>
                         </div>
                     </div>
@@ -113,24 +106,23 @@
          <br><br><br>
          </div> 
         
-          <div class="contentDiv3"> 
+          <div class="div-parent-code"> 
             <br>
             <br><br>
-            <br>
+            <br><br><br>
             <div class="container">
-            <div class="row divCode"  style="width: 100%;">
-                <div class="col col-md-6 col-sm-12 col-xs-12 boxCode">
-                   <div class="code">
+            <div class="row row-code"  >
+                <div class="col col-md-5 col-sm-12 col-12 code-box">
                      &lt; form id="rjrrjrjr" form&gt;
-                     <div class="dots">
-                     <i class="fa-solid fa-circle" style="color: #c115a1;"></i>
-                     <i class="fa-solid fa-circle" style="color: #2eabad;"></i>
-                     <i class="fa-solid fa-circle" style="color: #bcc2c2;"></i>
+                     <div class="dots-code">
+                     <i class="fa-solid fa-circle icon-purple" ></i>
+                     <i class="fa-solid fa-circle icon-blue" ></i>
+                     <i class="fa-solid fa-circle icon-gray" ></i>
                      </div>
-                   </div>
                 </div>
-                <div class="col col-md-6 col-sm-12 col-xs-12" style="margin-top: 5%;">
-                    <h2 style="color: rgba(21, 23, 40, 0.833); font-weight: 700;">Easy To Implement</h2>
+                <div class="col col-md-1"></div>
+                <div class="col col-md-6 col-sm-12 col-12 paragraph-code" >
+                    <h2>Easy To Implement</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eum vero sapiente tempora quo totam quae, quidem vitae consectetur ducimus necessitatibus iure quia ratione? Totam illum quisquam iure saepe minus.</p>
                     <br>
                 </div>
@@ -138,32 +130,35 @@
          </div>
          <br><br><br><br><br>
           <div class="container">
-         <div class="row divUX" style="width:100%">
-            <div class="col col-md-6 col-sm-12 col-xs-12">
-                <h2 style="color: rgba(21, 23, 40, 0.833); font-weight: 700;">Simple UI & UX</h2>
+         <div class="row row-ui">
+            <div class="col col-md-6 col-sm-12 col-12 paragraph-ui" >
+                <h2>Simple UI & UX</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eum vero sapiente tempora quo totam quae, quidem vitae consectetur ducimus necessitatibus iure quia ratione? Totam illum quisquam iure saepe minus.</p>
             </div>
-            <div class="col col-md-6 col-sm-12 col-xs-12 img2" >
-                <img src="mobile1.png" alt="" width="50%">
+            <div class="col col-md-6 col-sm-12 col-12 " >
+                <img src="images/mobile1.png" alt="" width="50%">
             </div>
             </div>
          </div>
        <br><br><br>
         <div class="container">
-         <div class="row divCards" >
-            <div class="col col-md-4 col-sm-12 col-xs-12">
+         <div class="row all-cards" >
+            <div class="col col-md-4 col-sm-12 col-12">
                 <i class="fa-solid fa-users"></i>
+                <br><br>
                 <h3>Personal Finaces</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint molestias natus deleniti ipsam dolorem perspiciatis distinctio totam sed explicabo, minus officia rerum illum consequuntur cumque, nisi quae quas, fuga debitis.
                 </p>
             </div>
-            <div class="col col-md-4 col-sm-12 col-xs-12">
+            <div class="col col-md-4 col-sm-12 col-12">
                 <i class="fa-solid fa-city"></i>
+                <br><br>
                 <h3>Banking & Coverage</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi facilis corporis reprehenderit fugit, quibusdam, at quidem necessitatibus minima dignissimos magni ab cum nesciunt amet placeat ducimus animi modi nulla.</p>
             </div>
-            <div class="col col-md-4 col-sm-12 col-xs-12">
+            <div class="col col-md-4 col-sm-12 col-12">
                 <i class="fa-solid fa-earth-americas"></i>
+                <br><br>
                 <h3>Consumer Payments</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid sed ut labore, fugiat reiciendis, blanditiis laborum debitis perferendis delectus natus nulla obcaecati in illum necessitatibus eaque! Atque consequatur ut aliquam.</p>
             </div>
@@ -171,21 +166,19 @@
         </div> 
 <br><br>
         <div class="container">
-            <div class="row" style="width: 100%;">
-                <div class="col col-md-6 col-sm-12 col-xs-12 divInputAll">
-                    <h2 style="color: rgba(21, 23, 40, 0.833); font-weight: 700;">Ready To Start?</h2>
+            <div class="row" >
+                <div class="col col-md-6 col-sm-12 col-12 ">
+                    <h2 >Ready To Start?</h2>
                 </div>
-                <div class="col col-md-6 col-sm-12 col-xs-12 ">
-                    <div class=" input-group divInput" id="divInput2">
-                        <div class="col col-md-9 col-sm-9 col-xs-12">
-                        <input type="search" placeholder="Enter Email Address" class="form-control" style="border-radius: 50px;width: 120%;">
+                <div class="col col-md-6 col-sm-12 col-12 ">
+                    <div class="input-group mb-3">
+                        <div class="col col-md-9 col-sm-9 col-12">
+                        <input type="search" class="form-control" placeholder="Search" name="search">
                         </div>
-                        <div class="col col-md-3 col-sm-3 col-xs-12">
-                        <span class="input-group-btn btnDiv1" >
-                        <button class="btn" type="button" style="border-radius: 50px;"> Schedule a Demo</button>
-                        </span>
+                        <div class="col col-md-3 col-sm-3 col-12">
+                        <button class="btn" type="button">example.com</button>
                         </div>
-                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -196,35 +189,35 @@
 
         <footer >
             <div class="container">
-          <div class="row" style="width: 100%;">
-            <div class="col col-md-10 col-sm-6 col-xs-12">
+          <div class="row" >
+            <div class="col col-md-10 col-sm-6 col-12">
                 <div class="row">
-                    <div class="col col-md-3 col-sm-12 col-xs-12">
+                    <div class="col col-md-3 col-sm-12 col-12">
                         <a class="navbar-brand" href="#">
-                            <!-- PayPal Logo --><table style="margin: 0px;padding: 0%;" border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/eg/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/eg/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" border="0" alt="PayPal Logo"></a></td></tr></table>
+                          <table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/eg/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/eg/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" border="0" alt="PayPal Logo"></a></td></tr></table>
 
              </a>
                     </div>
-                    <div class="col col-md-2 col-sm-12 col-xs-12 links">
+                    <div class="col col-md-2 col-sm-12 col-12 links-footer">
                         <p >Pricing</p>
                     </div>
-                    <div class="col col-md-2 col-sm-12 col-xs-12 links">
+                    <div class="col col-md-2 col-sm-12 col-12 links-footer">
                         <p >About</p>
                     </div>
-                    <div class="col col-md-2 col-sm-12 col-xs-12 links" >
+                    <div class="col col-md-2 col-sm-12 col-12 links-footer" >
                         <p >Contact</p>
                     </div>
                 </div>
             </div>
-            <div class="col col-md-2 col-sm-6 col-xs-12 links">
+            <div class="col col-md-2 col-sm-6 col-12 links-footer">
                 <div class="row">
-                    <div class="col col-md-4 col-sm-4 col-xs-4 ">
+                    <div class="col col-md-4 col-sm-4 col-4 ">
                         <i class="fa-solid fa-city "></i>
                     </div>
-                    <div class="col col-md-4 col-sm-4 col-xs-4 ">
+                    <div class="col col-md-4 col-sm-4 col-4 ">
                         <i class="fa-solid fa-city"></i>
                     </div>
-                    <div class="col col-md-4 col-sm-4 col-xs-4 ">
+                    <div class="col col-md-4 col-sm-4 col-4 ">
                         <i class="fa-solid fa-city"></i>
                     </div>
                 </div>
@@ -232,6 +225,8 @@
           </div>
           </div>
           <br><br><br><br>
+
         </footer>
     </body>
 </html>
+
